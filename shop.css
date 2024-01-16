@@ -2,9 +2,8 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    outline: 1px solid ;
+    /* outline: 1px solid red; */
 }
-
 /* -----------------------------------bande--------------------------- */
 .all{
     font-size: xx-large;
@@ -23,7 +22,7 @@
     position: sticky;
     background-color: #fff;
     top: 0;
-    margin-bottom: 20px;
+    z-index: 1000;
 }
 .sous{
     display: none;
@@ -41,7 +40,7 @@
     padding: 15px 5px ;
     font-size: 15px;
     font-weight: 600;
-    color: rgb(88, 86, 86);
+    color: rgb(117, 115, 115);
     cursor: pointer;
 }
 .sous{
@@ -56,30 +55,160 @@
 /* -------------------------------------produits--------------------------------------- */
 .produitflex{
     display: flex;
-    /* gap: 50px; */
+    margin: 30px 0;
     justify-content: space-evenly;
 }
-.bloc-produit{
+.bloc-produit,.bloc-produits,.bloc-produitss{
     width: 20%;
     text-align: center;
     color:rgb(74, 72, 72) ;
 }
-.bloc-produit i{
+.bloc-produit i,.bloc-produits i,.bloc-produitss i{
     color: #E5A0AF;
     font-size: 15px;
 }
 .back:hover{
-    content: url("./img/Hazelnut-butter-1_1000x_faba46c8-74c3-4380-a4cf-b1b298c63f45_252x252.webp");
-    /* width: 100%; */
-} 
-.back  {
+    content: url("./img/Prana_produit_siteweb_OCT2022_sunflower2_400x.jpg");
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+   position: relative;
 }
-.back img{
+.bloc-produit img,.bloc-produits img,.bloc-produitss img{
     width: 100%;
-    height: 100%;
-    object-fit: cover;
 }
+.back1:hover{
+    content: url('./img/Almond_400x.webp');
+    width: 100%;
+}
+.back2:hover{
+    content: url('./img/ficheproduitgeneriqueNOV2023_pumpkinseed_400x.jpg');
+    width: 100%;
+}
+.back3:hover{
+    content: url('./img/ficheproduitgeneriqueNOV2023_QUINOA1_400x.jpg');
+    width: 100%;
+}
+.bold{
+    font-weight: bold;
+    margin: 5px;
+}
+.bloc-produit{
+    animation: scale-in-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+@keyframes scale-in-center{
+    0% {
+        transform: scale(0);
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+.red{
+    color: #B82330;
+}
+.underline{
+    text-decoration: line-through;
+}
+.bloc-produits{
+    animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; 
+}
+@keyframes slide-top {
+    0%{
+       transform: translateY(0);
+    }
+    100%{
+        transform: translateY(-10px);
+    }
+}
+/* ---------------------------------------------footer----------------------------------- */
+.footer{
+    margin-top: 150px;
+    position: relative;
+    padding: 50px;
+    display: flex;
+    gap: 100px;
+    line-height: 2;
+    background-color: #FFD8C5;
+}
+.footer2{
+    display: flex;
+    white-space: nowrap;
+    gap: 20px;
+}
+.black{
+    color:#413f3f;
+    font-weight: 600;
+    font-size: large;
+}
+.oiseau{
+    position: absolute;
+    right: 10px;
+    top: -30%;
+}
+input[type=email]{
+    padding: 15px 20px;
+    border: 1px solid #6d6a6a;
+    border-radius: 10px;
+}
+ ::placeholder{
+    font-size: medium;
+}
+input[type=button]{
+    padding: 15px 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    background-color: #53555A;
+}
+.white{
+    padding: 30px;
+}
+.white ul li{
+    list-style-type: none;
+}
+.white ul:nth-child(1){
+    margin-bottom: 15px;
+}
+@media screen and (max-width:992px) {
+    .footer{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .produitflex{
+        display: flex;
+        flex-direction: column;
+    }
+    .bloc-produit,.bloc-produits,.bloc-produitss{
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+        color:rgb(74, 72, 72) ;
+    }
+    .oiseau{
+        position: absolute;
+        right: 10px;
+        top: -15%;
+    }
+}
+/* .back{
+    position: relative;
+    display: block;
+    cursor: pointer;
+    overflow: hidden;
+    text-align: center;
+}
+.text-hover{
+    background-color: #ffa;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: none;
+}
+.back:hover .text-hover{
+    opacity: 0.8;
+    display: block;
+} */
 

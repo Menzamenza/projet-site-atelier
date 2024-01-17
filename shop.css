@@ -79,14 +79,17 @@
 .back1:hover{
     content: url('./img/Almond_400x.webp');
     width: 100%;
+    cursor: pointer;
 }
 .back2:hover{
     content: url('./img/ficheproduitgeneriqueNOV2023_pumpkinseed_400x.jpg');
     width: 100%;
+    cursor: pointer;
 }
 .back3:hover{
     content: url('./img/ficheproduitgeneriqueNOV2023_QUINOA1_400x.jpg');
     width: 100%;
+    cursor: pointer;
 }
 .bold{
     font-weight: bold;

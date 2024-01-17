@@ -40,7 +40,7 @@
     padding: 15px 5px ;
     font-size: 15px;
     font-weight: 600;
-    color: rgb(117, 115, 115);
+    color: rgb(247, 0, 0);
     cursor: pointer;
 }
 .sous{
@@ -133,7 +133,7 @@
     display: flex;
     gap: 100px;
     line-height: 2;
-    background-color: #FFD8C5;
+    background-color: #f55200;
 }
 .footer2{
     display: flex;

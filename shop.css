@@ -71,6 +71,7 @@
     content: url("./img/Prana_produit_siteweb_OCT2022_sunflower2_400x.jpg");
     width: 100%;
    position: relative;
+   cursor: pointer;
 }
 .bloc-produit img,.bloc-produits img,.bloc-produitss img{
     width: 100%;

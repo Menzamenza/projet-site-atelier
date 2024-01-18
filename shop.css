@@ -4,6 +4,49 @@
     padding: 0;
     /* outline: 1px solid red; */
 }
+/* -----------------------------------------navabr----------------------------------------- */
+.barre{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 15px;
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 1px 1px 1px#6d6a6a;
+}
+
+.barre ul{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    color: #B82330;
+
+}
+.entete{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFD8C5;
+    margin: auto;
+    padding: 15px;
+}
+
+a{
+    color: #B82330;
+    text-decoration: none;
+}
+
+.icon{
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    color: #B82330;
+}
+.barre{
+    display:flex;
+}
 /* -----------------------------------bande--------------------------- */
 .all{
     font-size: xx-large;
@@ -22,7 +65,7 @@
     position: sticky;
     background-color: #fff;
     top: 0;
-    z-index: 1000;
+    z-index: 100;
 }
 .sous{
     display: none;

@@ -5,25 +5,6 @@
     /* outline: 1px solid red; */
 }
 /* -----------------------------------------navabr----------------------------------------- */
-.barre{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    padding: 15px;
-    background-color: #fff;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 1px 1px 1px#6d6a6a;
-}
-
-.barre ul{
-    display: flex;
-    gap: 30px;
-    list-style: none;
-    color: #B82330;
-
-}
 .entete{
     display: flex;
     justify-content: center;
@@ -31,22 +12,93 @@
     background-color: #FFD8C5;
     margin: auto;
     padding: 15px;
+    font-weight: 900;
+}
+.barre{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 1px 1px 1px#6d6a6a;
 }
 
-a{
+.barre .menu{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+a,.a{
     color: #B82330;
     text-decoration: none;
+    font-weight: 600;
 }
 
 .icon{
     display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 20px;
-    margin-top: 20px;
     color: #B82330;
 }
-.barre{
-    display:flex;
+/* ------------------------------navbar hover--------------------------------- */
+
+/* ***********shop all hover liste****** */
+.flex-ul{
+    list-style-type:none ;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-weight: normal;
+    cursor: pointer;
 }
+.sous-nav-hover{
+    position: relative;
+}
+.menu .sous-nav{
+    display: none;
+    position: absolute;
+    top: 61px;
+    left: -14px;
+    z-index: 100;
+    background-color: #fff;
+}
+.sous-nav-hover:hover .sous-nav{
+    display: flex;
+    width: 98vw;
+    color: #000;
+    justify-content: space-between;
+}
+.sous-nav-hover:hover .sous-nav ul:nth-child(1){
+    border-top:2px solid #B82330;
+}
+
+/* ***************recipes and who we arehover liste**************** */
+.sous-nav-hover-recipes{
+    position: relative;
+}
+.sous-nav-recipes{
+    display: none;
+    width: max-content;
+    position: absolute;
+    top: 61px;
+    z-index: 100;
+    background-color: #fff;
+}
+.sous-nav-recipes>li{
+    font-weight: normal;
+    cursor: pointer;
+    list-style-type: none;
+    padding: 10px 20px ;
+}
+.sous-nav-hover-recipes:hover .sous-nav-recipes{
+    display: block;
+    border-top:2px solid #B82330;
+}
+
+/* ----------------------------------fin navbar hover------------------------------------- */
 /* -----------------------------------bande--------------------------- */
 .all{
     font-size: xx-large;
@@ -64,8 +116,8 @@ a{
     border: 1px solid rgb(187, 180, 180);
     position: sticky;
     background-color: #fff;
-    top: 0;
-    z-index: 100;
+    top: -1px;
+    z-index: 10;
 }
 .sous{
     display: none;

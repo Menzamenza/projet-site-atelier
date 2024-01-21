@@ -188,7 +188,21 @@ P2{
     position: relative;
 }
 
-.text{
+.text1{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 250%;
+}
+
+.text2{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 250%;
+}
+
+.text3{
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -356,4 +370,137 @@ input[type=button]{
 
 .red{
     color: #B82330;
+}
+
+@media screen and (max-width:992px) {
+
+    .entete{
+        width: 100vh;
+        margin: auto;
+    }
+
+    .barre{
+      margin: auto;
+      width: 100vh;
+    
+    }
+
+
+    .banner img{
+        width: 103vh;
+      
+      }
+
+      .fruit1{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .fruit img{
+        width: 114%;
+        padding: 20px;
+        height: 100%;
+        text-align: center;
+        color:rgb(74, 72, 72) ;
+    }
+
+
+    p1{
+        font-size: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-left: 10px;
+    }
+
+    p2{
+        text-align: center;
+        font-size: 50px;
+        display: flex;
+        justify-content: center;
+    }
+
+
+
+    .button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 40px;   
+    }
+    
+    .button button{
+        padding: 20px;  
+        border-radius: 20px 20px 20px 20px; 
+        color: white;
+        background-color: grey;
+        border: 0px;
+        font-size: 20px;
+    }
+
+
+    .cook2{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .cook img{
+        width: 117%;
+        height: 100%;
+    }
+    
+    .cook{
+        position: relative;
+    }
+    
+    .text1{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 680%;
+        font-size: 50px;
+    }
+
+ 
+    .text2{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 800%;
+        font-size: 50px;
+    }
+
+
+     
+    .text3{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 940%;
+        font-size: 50px;
+    }
+
+
+    .nouveau{
+        height: 100vh;
+        width: 102vh;
+    }
+    
+    .new{
+        margin: 30% 35%;
+        padding: 80px;
+    }
+    
+
+    .footer{
+       width: 92vh;
+    }
+    
+    .oiseau{
+        position: absolute;
+        right: 10px;
+        top: -28%;
+    }
 }

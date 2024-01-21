@@ -7,26 +7,31 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: darksalmon;
+    background-color: #FFD8C5;
     margin: auto;
 }
 
 .barre{
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: space-evenly;
     padding: 15px;
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 1px 1px 1px#6d6a6a;
 }
 
 .barre ul{
     display: flex;
     gap: 30px;
     list-style: none;
-    color: rgb(185, 10, 10);
-
+    color: #B82330;
 }
 
 a{
-    color: rgb(185, 10, 10);
+    color: #B82330;
     text-decoration: none;
 }
 
@@ -34,11 +39,11 @@ a{
     display: flex;
     gap: 20px;
     margin-top: 20px;
-    color: rgb(185, 10, 10);
+    color: #B82330;
 }
 
 p{
-    color: rgb(185, 10, 10);
+    color: #B82330;
 }
 
 .banner img{

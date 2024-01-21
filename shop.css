@@ -16,6 +16,7 @@
 }
 .barre{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     padding: 15px;
@@ -203,6 +204,21 @@ a,.a{
         opacity: 1;
     }
 }
+
+.defilement{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color:rgb(74, 72, 72) ;
+}
+.defilement div{
+    padding: 30px;
+}
+.defilement div:nth-child(1){
+    border-bottom:2px solid #413f3f;
+}
 .red{
     color: #B82330;
 }
@@ -291,6 +307,19 @@ input[type=button]{
         right: 10px;
         top: -15%;
     }
+    .defilement{
+        display:flex;
+        align-items: center;
+        gap: 40px;
+        justify-content: center;
+        margin-bottom: 10px;
+        font-weight: 600;
+        color:rgb(74, 72, 72) ;
+    }
+    .defilement div{
+        padding: 0;
+    }
+    
 }
 /* .back{
     position: relative;

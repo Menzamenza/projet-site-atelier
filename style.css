@@ -199,21 +199,21 @@ P2{
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 250%;
+    top: 280%;
 }
 
 .text2{
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 250%;
+    top: 280%;
 }
 
 .text3{
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 250%;
+    top: 280%;
 }
 
 .cook2{
@@ -379,6 +379,11 @@ input[type=button]{
     color: #B82330;
 }
 
+
+
+
+
+
 @media screen and (max-width:991px) {
 
     .entete{
@@ -510,4 +515,50 @@ input[type=button]{
         right: 10px;
         top: -28%;
     }
+}
+
+
+@media screen and (max-width:412px){
+    h1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .frui{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .frui img{
+      width: 103vh;
+      height: 100vh;
+    }
+
+    .tex{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        font-size: 20px;
+    }
+    p6{
+        font-size: 20px;
+        width: 100vh;
+    }
+    
+    p5{
+        font-size: 20px;
+        width: 100vh;
+    }
+
+    .button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 40px;  
+        width: 100vh; 
+    }
+    
 }

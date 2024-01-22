@@ -319,14 +319,137 @@ span{
     background-color: white;
     padding: 30px;
 }
+/* ****************************menza part**************************************** */
+.customers{
+    background-color: #F9F9FA;
+    text-align: center;
+    margin: 30px 0;
+    padding: 30px 0;
+}
+.i{
+    color: #E5A0AF;;
+}
+.date{
+    color: #53555A;
+    font-size: small;
+}
+.custom-text p:nth-child(1){
+    color: #B82330;
+    font-weight: 900;
+    font-size: xx-large;
+}
+.custom-text p:nth-child(2){
+    color: #53555A;
+    font-weight: 900;
+    font-size: xx-large;
+}
+.custom-img{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.souligne{
+    text-decoration: underline;
+}
+.redbold{
+    color: #B82330;
+    font-weight: bold;
+    font-size: x-large;
+}
+.nourishing-bloc img{
+    width: 300px;
+}
+.nourishing> div:nth-child(1){
+    text-align: center;
+    padding-top: 10px;
+}
+.nourishing{
+    text-align: start;
+    background-image: url("./img/banniere_bas_site_regulier2_1920x1080.jpg");
+    background-size: cover;
+    padding: 100px ;
+}
+.nourishing-bloc{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.carte{
+    width: 300px;
+    position: relative;
+    margin-bottom: 100px;
+}
+.card-nourish{
+    background-color: #fff;
+    padding: 0 10px ;
+    position: absolute;
+    top: 90%;
+    border-bottom: 1px solid;
+}
+.button-all{
+    text-align: center;
+    margin-top: 50px;
+}
+#button-all{
+    text-align: center;
+    padding:  10px ;
+    font-size: medium;
+    border-radius: 50px;
+    border: 2px solid #53555A;
+}
+.aboutus> div:nth-child(1){
+    display: flex;
+    align-items: center;
+    gap: 100px;
 
-
-
-
-
+}
+.aboutus> div:nth-child(2){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+}
+.aboutus{
+    margin: 50px ;
+}
+.aboutus img{
+    width: 600px;
+}
+.join{
+    background-image: url("./img/banniere_bas_site_regulier_1500x.jpg");
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 150px;
+}
+.join> div:nth-child(1){
+    font-size: xx-large;
+    font-weight: bold;
+}
+.join> div:nth-child(2){
+    font-size: large;
+    padding: 0 200px ;
+}
+input[type=email]{
+    border-radius: 20px;
+    width: 250px;
+}
+#button-al{
+   border: none;
+   padding: 15px; 
+   background: #fff;
+   color: #000;
+   font-weight: 500;
+   border-radius: 15px;
+}
 /* ---------------------------------------------footer----------------------------------- */
 .footer{
-    margin-top: 150px;
+    /* margin-top: 150px; */
     position: relative;
     padding: 50px;
     display: flex;
@@ -509,5 +632,22 @@ input[type=button]{
         position: absolute;
         right: 10px;
         top: -28%;
+    }
+    .nourishing-bloc{
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .aboutus> div:nth-child(1){
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 20px;
+    
+    }
+    .aboutus img{
+        width: 100%;
     }
 }

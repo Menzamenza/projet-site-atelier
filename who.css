@@ -109,6 +109,7 @@ h1{
     text-align: center;
     font-size: 35px;
     font-weight: 500;
+    padding-top: 20px;
 }
 
 .image1 img{
@@ -198,6 +199,7 @@ h1{
     text-align: center;
     font-size: 18px;
     color: rgb(95, 86, 86);
+    padding-bottom: 60px;
 }
 
 .mini_title{
@@ -258,4 +260,34 @@ input[type=button]{
 
 .red{
     color: #B82330;
+}
+
+
+
+
+
+
+
+@media screen and (max-width:992px) {
+    .footer{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .oiseau{
+        position: absolute;
+        right: 10px;
+        top: -15%;
+    }
+    
+    .barre{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .icone{
+        display: flex;
+        flex-direction: column;
+    }
 }

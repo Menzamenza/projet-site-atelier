@@ -133,22 +133,20 @@ h1{
 
 .container1{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap;
-    gap: 10px;
-    margin: 20px;
+    margin-bottom: 20px;
 }
 
 .container2{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap;
-    gap: 10px;
-    margin: 20px;
+    margin-bottom: 80px;
 }
 
 .card1{
-    width: 300px;
+    width: 250px;
 }
 
 .card1 img{
@@ -199,7 +197,7 @@ h1{
     text-align: center;
     font-size: 18px;
     color: rgb(95, 86, 86);
-    padding-bottom: 60px;
+    /* padding-bottom: 60px; */
 }
 
 .mini_title{

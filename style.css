@@ -296,9 +296,11 @@ p4{
     }
 }
 .tex{
-    padding-top: 50px;
+    padding: 0 ;
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    margin-bottom: 70px;
 }
 
 p6{
